@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@keyframes ehsan {
+    from {
+        background-color: yellow;
+    }to {
+        background-color: orange;
+
+    }
+}
+
+@keyframes esi {
+    0% {
+        background-color: darkblue;
+        left: -1000px;
+    }25%{
+        background-color: blue;
+        left: -800px;
+    }50%{
+        background-color: skyblue;
+        left: -600px;
+    }75%{
+        background-color: lightgreen;
+        left: -400px;
+    }100%{
+        background-color: green;
+        left: -200px;
+    }
+}
+
+@keyframes kooch {
+    0%{
+        top: -1000px;
+    }100%{
+        top: calc(300px - 200px);
+    }
+}
+
+
+div.box {
+    width: 300px;
+    height: 200px;
+    background-color: aqua;
+    margin: 300
+    px auto;
+}
+
+
+div.box1 {
+    width: 300px;
+    height: 200px;
+    background-color: aqua;
+    margin: 150px auto;
+    animation-name: ehsan;
+    animation-duration: 2s;
+}
+
+div.box2 {
+    width: 300px;
+    height: 200px;
+    background-color: aqua;
+    margin: 150px auto;
+    animation-name: esi;
+    animation-duration: 2s;
+    position: absolute;
+
+}
+
+div.box3 {
+    width: 300px;
+    height: 200px;
+    background-color: red;
+    margin: 150px auto;
+    animation-name: kooch;
+    animation-duration: 2s;
+    left: calc(50% - 150px);
+    top: calc(50vh- 200px);
+    position: absolute;
+
+}
+
